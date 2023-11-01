@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class BubbleSort {
 
-	public static void main(String[] args) {
-		int arr[] = new int[10];
+	public static void main(String[] args) {	
+		int size = 0;
 		int index;
-		System.out.println("Enter 10 elements to sort");
+		System.out.println("Enter number elements to sort");
 		Scanner sc = new Scanner(System.in);
-		for(index = 0;index<10;index++) {
+		size = sc.nextInt();
+		int arr[] = new int[size];
+		System.out.println("Enter the elements");
+		for(index = 0;index<size;index++) {
 			arr[index] = sc.nextInt();
 		}
 		System.out.println("Array before sorting");
@@ -31,6 +34,7 @@ public class BubbleSort {
 			System.out.print(el+",");
 		}
 		System.out.println("\nThe smallest element is : "+arr[0]);
+		sc.close();
 
 	}
 
