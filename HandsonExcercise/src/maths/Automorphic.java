@@ -14,14 +14,20 @@ public class Automorphic {
 		System.out.println("The square of "+num+" is "+square);
 		String ogNum = Integer.toString(num);
 		String sqNum = Integer.toString(square);
-		checkAutomorphic(ogNum,sqNum);
+		if(checkAutomorphic(ogNum,sqNum)) {
+			System.out.println("Number is an automorphic number");
+		}else {
+			System.out.println("Number is not an automorphic number");
+		}
 		sc.close();
-
 	}
 	
 	public static boolean checkAutomorphic(String number, String squareNum) {
-		
-		return false;
+		if(squareNum.endsWith(number)) {
+			return true ;
+		}else {
+			return false;
+		}
 	}
 
 }
