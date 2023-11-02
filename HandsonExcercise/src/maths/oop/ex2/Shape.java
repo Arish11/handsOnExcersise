@@ -1,5 +1,7 @@
 package maths.oop.ex2;
 
-public abstract class Shape {
-	public abstract double getArea();
+public class Shape {
+	public double getArea() {
+		return 0;
+	}
 }

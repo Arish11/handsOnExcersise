@@ -13,6 +13,7 @@ public class App {
 		bre = sc.nextDouble();
 		Rectangle rec = new Rectangle(len, bre);
 		System.out.println("The area of rectangle is "+rec.getArea());
+		sc.close();
 	}
 
 }
