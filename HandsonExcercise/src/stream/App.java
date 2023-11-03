@@ -36,7 +36,7 @@ public class App {
 		        .min(Integer::compareTo) //same as ((a,b)-> Integer.compareTo(a,b))
 		        .orElseThrow(() -> new IllegalArgumentException("List contains only one unique element"));
 		
-		System.out.println(largest.get()+" "+secondSmallest);
+		System.out.println("Largest number is "+largest.get()+"\nSecond smallest number is "+secondSmallest);
 
 
 	}
