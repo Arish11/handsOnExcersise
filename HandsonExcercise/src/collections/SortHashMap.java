@@ -7,6 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 
 public class SortHashMap {
@@ -14,9 +15,14 @@ public class SortHashMap {
 	public static void main(String[] args) {
 		
 		HashMap<String, Integer> hm = new HashMap<>();
-		hm.put("Test1", 1);
-		hm.put("Test3", 13);
-		hm.put("Test2", 3);
+		int val, range;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of entries to add in hashmap");
+		range = sc.nextInt();
+	    for (int i = 0; i < range; i++) {
+	            System.out.println("Enter key for entry");
+	            String key = sc.nextLine();
+	        }
 		System.out.println("Hash map before sorting is \n"+ hm.entrySet());
 		HashMap<String, Integer> sortMap = sortByValues(hm);
 		for(Map.Entry<String, Integer> el : sortMap.entrySet()) {
