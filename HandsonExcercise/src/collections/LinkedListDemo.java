@@ -1,12 +1,13 @@
 package collections;
 
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
-public class LinkedList {
+public class LinkedListDemo {
 
 	 public static void main(String[] args) {
-			LinkedList linkedList = new LinkedList();
+			LinkedList<Integer> linkedList = new LinkedList<Integer>();
 			
 			int choice;
 			Scanner sc = new Scanner(System.in);
