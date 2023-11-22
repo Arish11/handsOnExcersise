@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class App2 {
+public class FilterMap {
 
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<Integer>();		
